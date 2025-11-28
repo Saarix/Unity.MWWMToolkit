@@ -1,5 +1,6 @@
 using DG.Tweening;
 using MVVMToolkit.DataBinding;
+using MVVMToolkit.UI;
 using UnityEngine;
 using UnityEngine.Localization.Components;
 using UnityEngine.UI;

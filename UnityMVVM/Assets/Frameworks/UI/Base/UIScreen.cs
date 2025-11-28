@@ -22,7 +22,7 @@ namespace MVVMToolkit.UI
         {
             view = GetComponent<TView>();
 
-            viewModel.Init(View, Manager, Manager.UserActionHandler);
+            viewModel.Init(View, Manager);
 
             // Assign data to data context
             DataContext.Data = viewModel;
@@ -35,7 +35,7 @@ namespace MVVMToolkit.UI
             base.Open(openData);
 
             if (!IsInitialized)
-                Framework.Trace.Error($"Trying to call Open while object is not yet initialized. ScreenType={Type}, openData={openData}");
+                Debug.LogError($"Trying to call Open while object is not yet initialized. ScreenType={Type}, openData={openData}");
 
             viewModel.LoadData(openData);
         }

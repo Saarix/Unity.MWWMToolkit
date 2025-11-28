@@ -45,7 +45,7 @@ public abstract class UiComponent<TView, TViewModel> : UiComponentBase
 
         view = GetComponent<TView>();
 
-        viewModel.Init(View, Manager, Manager.UserActionHandler);
+        viewModel.Init(View, Manager);
 
         // Assign data to data context
         DataContext.Data = viewModel;

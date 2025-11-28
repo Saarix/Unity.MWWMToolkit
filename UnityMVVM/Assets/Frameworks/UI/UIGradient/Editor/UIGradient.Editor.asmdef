@@ -2,7 +2,7 @@
     "name": "MVVMToolkit.UI.Gradient.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:0e4f25ec090ab3f4ea5ea82981a7666c"
+        "GUID:5eb707d6b9e35534a8ac9b320acc1b90"
     ],
     "includePlatforms": [
         "Editor"

@@ -1,5 +1,5 @@
-using MVVMToolkit.DataBinding;
 using JoshH.UI;
+using MVVMToolkit.DataBinding;
 using UnityEngine;
 
 namespace MVVMToolkit.UI

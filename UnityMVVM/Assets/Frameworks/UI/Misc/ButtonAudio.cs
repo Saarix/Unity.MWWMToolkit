@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+using MVVMToolkit.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class ButtonAudio : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField]
-    private AudioClip audioClip;
+    [SerializeField] private AudioClip audioClip;
 
     public void OnPointerClick(PointerEventData eventData)
     {

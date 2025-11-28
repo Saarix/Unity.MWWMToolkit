@@ -2,6 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Localization.Components;
+using MVVMToolkit.UI;
 
 [RequireComponent(typeof(CanvasGroup))]
 [RequireComponent(typeof(RectTransform))]
