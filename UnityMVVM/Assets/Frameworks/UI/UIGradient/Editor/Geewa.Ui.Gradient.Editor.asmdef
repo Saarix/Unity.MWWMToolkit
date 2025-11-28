@@ -1,0 +1,18 @@
+{
+    "name": "MVVMToolkit.UI.Gradient.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0e4f25ec090ab3f4ea5ea82981a7666c"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
