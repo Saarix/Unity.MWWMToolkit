@@ -1,5 +1,4 @@
 using MVVMToolkit.DataBinding;
-using Geewa.Framework;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Components;

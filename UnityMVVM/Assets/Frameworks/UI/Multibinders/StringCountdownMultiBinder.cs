@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization.Components;
 using TMPro;
-using Geewa.Framework;
 using MVVMToolkit.DataBinding;
 
 namespace MVVMToolkit.UI

@@ -1,7 +1,5 @@
 using DG.Tweening;
-using Geewa.Api.Economy.Entities;
 using MVVMToolkit.DataBinding;
-using Geewa.Framework;
 using UnityEngine;
 using UnityEngine.Localization.Components;
 using UnityEngine.UI;
@@ -57,10 +55,6 @@ public class Tooltip : MonoBehaviour, ILayoutGroup
     {
         isShown = true;
         gameObject.SetActive(true);
-
-        // Note: all shard currencies use the same tooltip
-        if (localizableString.Key.EndsWith(Currencies.SHARD_SUFFIX))
-            localizableString.Key = "tooltip.currency.shards";
 
         LocalizableString = localizableString;
         this.targetTra = targetTra;

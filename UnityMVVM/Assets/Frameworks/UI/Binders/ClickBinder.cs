@@ -6,21 +6,7 @@ namespace MVVMToolkit.UI
 {
     public class ClickBinder : Binder, IPointerClickHandler
     {
-        [SerializeField]
-        private AudioClip clickSfx;
-
-        [Header("Confirmation")]
-        [SerializeField]
-        private bool requiresConfirmation = false;
-
-        [SerializeField]
-        private ConfirmationStyle confirmationStyle = ConfirmationStyle.ClassicYesNo;
-
-        [SerializeField]
-        private string confirmationTitle;
-
-        [SerializeField]
-        private string confirmationMessage;
+        [SerializeField] private AudioClip clickSfx;
 
         #region Fields
 
@@ -61,25 +47,10 @@ namespace MVVMToolkit.UI
             OnPointerClick(null);
         }
 
-        public async void OnPointerClick(PointerEventData eventData)
+        public void OnPointerClick(PointerEventData eventData)
         {
             UIManager.Instance.OnClick(eventData);
-
-            if (requiresConfirmation)
-            {
-                DialogResult result = await DialogManager.Instance.ShowDialog(confirmationStyle, confirmationTitle, confirmationMessage, options: DialogOption.Yes | DialogOption.No);
-
-                switch (result)
-                {
-                    case DialogResult.Yes:
-                        ExecuteCommand(eventData);
-                        break;
-                }
-            }
-            else
-            {
-                ExecuteCommand(eventData);
-            }
+            ExecuteCommand(eventData);
         }
 
         private void ExecuteCommand(object parameter)

@@ -2,7 +2,6 @@ using DG.Tweening;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Localization.Components;
-using Geewa.Framework;
 
 [RequireComponent(typeof(CanvasGroup))]
 [RequireComponent(typeof(RectTransform))]

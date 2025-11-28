@@ -1,6 +1,5 @@
 using System.Linq;
 using MVVMToolkit.DataBinding;
-using Geewa.Framework;
 using UnityEngine;
 
 namespace MVVMToolkit.UI
@@ -34,8 +33,11 @@ namespace MVVMToolkit.UI
                 {
                     bool result = conditionValues != null && conditionValues.Contains(localValue);
 
-                    positiveList.ForEach(x => x.SetActive(result));
-                    negatedList.ForEach(x => x.SetActive(!result));
+                    foreach (var item in positiveList)
+                        item.SetActive(result);
+
+                    foreach (var item in negatedList)
+                        item.SetActive(!result);
                 }
                 else
                 {

@@ -1,4 +1,6 @@
 
+using MVVMToolkit.UI;
+
 public interface IUiWindow
 {
     void Open(object data, bool useAnimation);

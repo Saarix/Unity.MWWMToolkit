@@ -1,4 +1,3 @@
-using Geewa.Framework;
 using UnityEngine;
 using MVVMToolkit.DataBinding;
 
@@ -55,8 +54,11 @@ namespace MVVMToolkit.UI
                             _ => false
                         };
 
-                        positiveList.ForEach(x => x.SetActive(result));
-                        negatedList.ForEach(x => x.SetActive(!result));
+                        foreach (var item in positiveList)
+                            item.SetActive(result);
+
+                        foreach (var item in negatedList)
+                            item.SetActive(!result);
                     }
                 }
                 else

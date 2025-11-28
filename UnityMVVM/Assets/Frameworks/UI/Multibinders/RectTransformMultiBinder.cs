@@ -1,6 +1,5 @@
 using UnityEngine;
 using System;
-using Geewa.Framework;
 using MVVMToolkit.DataBinding;
 
 namespace MVVMToolkit.UI
